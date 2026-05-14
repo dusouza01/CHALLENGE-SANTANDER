@@ -1,99 +1,92 @@
-# Santander Challenge - Análise Inteligente de Empresas PJ
+# Santander Challenge — Análise Inteligente de Empresas PJ
 
-Este projeto é uma solução desenvolvida para o Santander Challenge, focada em analisar e classificar empresas (PJ) com base em seu momento de vida e em suas relações financeiras dentro da rede de transações.
+Solução desenvolvida para o **Santander Challenge**, focada em analisar e classificar empresas (PJ) com base em seu momento de vida e em suas relações financeiras dentro da rede de transações.
 
-A solução combina análise de dados, machine learning, análise de redes financeiras e visualização interativa através de um dashboard em Streamlit.
-
----
-
-# 🚀 Tecnologias Utilizadas
-
-- **Linguagem:** Python 3
-- **Análise de Dados:** Pandas, NumPy
-- **Machine Learning:** Scikit-learn
-- **Análise de Rede:** NetworkX
-- **Dashboard:** Streamlit
-- **Visualização de Dados:** Plotly Express
-- **Utilitários:** Tqdm
+A solução combina análise de dados, machine learning, análise de redes financeiras e visualização interativa por meio de um dashboard em Streamlit.
 
 ---
 
-# ✨ Funcionalidades
+## 🚀 Tecnologias Utilizadas
 
-## 📊 Classificação de Momento de Vida
-Utiliza um modelo de clustering (**K-Means**) para categorizar empresas em perfis como:
+| Categoria | Tecnologia |
+|---|---|
+| Linguagem | Python 3 |
+| Análise de Dados | Pandas, NumPy |
+| Machine Learning | Scikit-learn |
+| Análise de Rede | NetworkX |
+| Dashboard | Streamlit |
+| Visualização | Plotly Express |
+| Utilitários | Tqdm |
+
+---
+
+## ✨ Funcionalidades
+
+### 📊 Classificação de Momento de Vida
+
+Utiliza um modelo de clustering (**K-Means**) para categorizar empresas em perfis:
 
 - Pequeno Porte
 - Em Crescimento
 - Consolidada
 - Grande Porte
 
----
+### 🔗 Análise de Rede Financeira
 
-## 🔗 Análise de Rede Financeira
 Mapeia as transações financeiras para:
 
 - Identificar empresas centrais (**hubs**)
 - Medir dependência entre parceiros comerciais
 - Entender conexões estratégicas dentro da rede
 
----
+### 📈 Projeções Simplificadas
 
-## 📈 Projeções Simplificadas
 Gera projeções de recebimentos para o próximo mês com base no histórico transacional da empresa.
 
----
-
-## 🖥️ Dashboard Interativo
+### 🖥️ Dashboard Interativo
 
 O dashboard possui duas visões principais:
 
-### 📌 Visão Geral do Portfólio
+**Visão Geral do Portfólio**
 - KPIs agregados
-- Gráficos interativos
-- Filtros dinâmicos
+- Gráficos interativos com filtros dinâmicos
 - Distribuição de empresas por perfil
 
-### 🔍 Análise Individual de Empresa
-Permite buscar empresas por ID e visualizar:
-
-- Perfil completo
-- Métricas financeiras
-- Métricas de rede
+**Análise Individual de Empresa**
+- Busca por ID
+- Perfil completo com métricas financeiras e de rede
 - Projeções futuras
 
 ---
 
-# 📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
-```bash
+```
 challenge_santander/
 │
-├── analise_completa.py
-├── dashboard.py
-├── Base 1 - ID.csv
-├── Base 2 - Transações.csv
+├── analise_completa.py       # Script principal de análise
+├── dashboard.py              # Dashboard interativo
+├── Base 1 - ID.csv           # Base de dados de identificação
+├── Base 2 - Transações.csv   # Base de dados de transações
 │
-├── empresas_analisadas.csv
-├── transacoes_com_data.csv
-├── analise.log
+├── empresas_analisadas.csv   # Saída: empresas processadas
+├── transacoes_com_data.csv   # Saída: transações tratadas
+├── analise.log               # Log detalhado da execução
 │
 └── README.md
 ```
 
 ---
 
-# ⚙️ Pré-requisitos
-
-Antes de começar, certifique-se de ter instalado:
+## ⚙️ Pré-requisitos
 
 - Python 3.8 ou superior
 
 ---
 
-# 📦 Instalação das Dependências
+## 📦 Instalação
 
-Abra o terminal na pasta do projeto e execute o comando abaixo para instalar todas as bibliotecas necessárias:
+Na pasta do projeto, execute:
 
 ```bash
 pip install pandas scikit-learn networkx streamlit plotly tqdm
@@ -101,71 +94,48 @@ pip install pandas scikit-learn networkx streamlit plotly tqdm
 
 ---
 
-# 🚀 Como Executar o Projeto
+## ▶️ Como Executar
 
-A aplicação funciona em duas etapas simples.
-
----
-
-## 🔹 Etapa 1 — Processar os Dados
-
-Execute o script principal de análise:
+### Etapa 1 — Processar os Dados
 
 ```bash
 python analise_completa.py
 ```
 
-Este script irá:
+O script irá:
+1. Ler `Base 1 - ID.csv` e `Base 2 - Transações.csv`
+2. Realizar tratamento de dados, feature engineering, modelagem e análise de rede
+3. Gerar `empresas_analisadas.csv` e `transacoes_com_data.csv`
+4. Salvar o log em `analise.log`
 
-- Ler os arquivos:
-  - `Base 1 - ID.csv`
-  - `Base 2 - Transações.csv`
-
-- Realizar:
-  - Tratamento dos dados
-  - Feature engineering
-  - Modelagem
-  - Análise de rede financeira
-
-- Gerar os arquivos:
-  - `empresas_analisadas.csv`
-  - `transacoes_com_data.csv`
-
-- Salvar um log detalhado da execução:
-  - `analise.log`
-
----
-
-## 🔹 Etapa 2 — Iniciar o Dashboard
-
-Após processar os dados, execute:
+### Etapa 2 — Iniciar o Dashboard
 
 ```bash
 streamlit run dashboard.py
 ```
 
-O Streamlit abrirá automaticamente uma nova aba no navegador com o dashboard interativo.
+O Streamlit abrirá automaticamente uma aba no navegador com o dashboard interativo.
 
 ---
 
-# 📊 Resultado Esperado
+## 📊 Resultados
 
 Após a execução completa, o projeto permitirá:
 
-- Visualizar métricas do portfólio
-- Explorar empresas individualmente
-- Entender conexões financeiras
-- Identificar empresas estratégicas
-- Obter insights de crescimento e dependência financeira
+- Visualizar métricas agregadas do portfólio
+- Explorar empresas individualmente por ID
+- Entender conexões e dependências financeiras
+- Identificar empresas estratégicas na rede
+- Obter insights de crescimento e risco financeiro
 
 ---
 
-# 📌 Objetivo do Projeto
+## 🎯 Objetivo
 
-O principal objetivo desta solução é auxiliar na tomada de decisão estratégica através da análise inteligente de empresas PJ, utilizando ciência de dados e análise de redes financeiras.
+Auxiliar na **tomada de decisão estratégica** por meio da análise inteligente de empresas PJ, aplicando ciência de dados e análise de redes financeiras.
 
 ---
 
-# 👨‍💻 Autor
+## 👨‍💻 Autor
 
-Projeto desenvolvido para o Santander Challenge.
+Projeto desenvolvido para o **Santander Challenge**.
