@@ -1,0 +1,35 @@
+2025-10-12 20:07:07,799 - INFO - ======================================================
+2025-10-12 20:07:07,799 - INFO - === INICIANDO SCRIPT DE ANÁLISE (MODO HISTÓRICO) ===
+2025-10-12 20:07:07,799 - INFO - ======================================================
+2025-10-12 20:07:07,799 - INFO - [PASSO 1/6] Iniciando: Carregamento, Limpeza e Preparação dos Dados.
+2025-10-12 20:07:08,074 - INFO - Realizando limpeza dos IDs...
+2025-10-12 20:07:08,440 - INFO - Limpeza concluída. Número de IDs únicos agora é: 10000
+2025-10-12 20:07:08,440 - INFO - Iniciando Feature Engineering...
+2025-10-12 20:07:08,641 - INFO - PASSO 1 concluído em 0.84 segundos.
+2025-10-12 20:07:08,641 - INFO - 
+[PASSO 2/6] Iniciando: Classificação de Momento de Vida.
+2025-10-12 20:07:11,694 - INFO - Iniciando a validação quantitativa dos clusters...
+2025-10-12 20:08:07,307 - INFO - Validação concluída. O Score de Silhueta do modelo é: 0.6740
+2025-10-12 20:08:07,323 - INFO - Salvando o modelo K-Means e o Scaler para uso futuro...
+2025-10-12 20:08:07,340 - INFO - Modelo e Scaler salvos com sucesso.
+2025-10-12 20:08:07,343 - INFO - PASSO 2 concluído em 58.70 segundos.
+2025-10-12 20:08:07,344 - INFO - 
+[PASSO 3/6] Iniciando: Análise da Rede de Transações.
+2025-10-12 20:08:07,906 - INFO - Calculando nível de dependência máxima...
+2025-10-12 20:08:08,189 - INFO - PASSO 3 concluído em 0.84 segundos.
+2025-10-12 20:08:08,189 - INFO - 
+[PASSO 4/6] Iniciando: Cálculo do Score de Risco.
+2025-10-12 20:08:08,238 - INFO - Coluna 'SCORE_RISCO' calculada e adicionada ao dataframe.
+2025-10-12 20:08:08,251 - INFO - PASSO 4 concluído em 0.06 segundos.
+2025-10-12 20:08:08,251 - INFO - 
+[PASSO 5/6] Iniciando: Modelo de Projeção de Recebimentos.
+2025-10-12 20:08:25,492 - INFO - PASSO 5 concluído em 17.24 segundos.
+2025-10-12 20:08:25,496 - INFO - 
+[PASSO 6/6] Iniciando: Salvamento dos Arquivos Finais.
+2025-10-12 20:08:26,600 - INFO - Arquivo 'empresas_analisadas.csv' salvo com sucesso.
+2025-10-12 20:08:27,319 - INFO - PASSO 6 concluído em 1.82 segundos.
+2025-10-12 20:08:27,319 - INFO - 
+=======================================================
+2025-10-12 20:08:27,319 - INFO - === ANÁLISE CONCLUÍDA COM SUCESSO ===
+2025-10-12 20:08:27,319 - INFO - === Tempo Total de Execução: 79.52 segundos ===
+2025-10-12 20:08:27,319 - INFO - =======================================================
