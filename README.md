@@ -1,4 +1,4 @@
-# Santander Challenge — Atração de Clientes PJ 
+# Santander Challenge(FIAP) — Atração de Clientes PJ 
 
 Solução desenvolvida para o **Santander Challenge**, focada em analisar e classificar empresas (PJ) com base em seu momento de vida e em suas relações financeiras dentro da rede de transações.
 
@@ -138,4 +138,4 @@ Auxiliar na **tomada de decisão estratégica** por meio da análise inteligente
 
 ## 👨‍💻 Autor
 
-Projeto desenvolvido para o **Santander Challenge**.
+Projeto desenvolvido para o **Santander Challenge**(FIAP).
