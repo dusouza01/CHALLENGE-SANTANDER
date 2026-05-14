@@ -1,4 +1,4 @@
-# Santander Challenge — Análise Inteligente de Empresas PJ
+# Santander Challenge — Análise Inteligente de Empresas PJ 
 
 Solução desenvolvida para o **Santander Challenge**, focada em analisar e classificar empresas (PJ) com base em seu momento de vida e em suas relações financeiras dentro da rede de transações.
 
